@@ -4,12 +4,12 @@ export default {
     97: '',
   },
   masterChef: {
-    56: '0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57',
-    97: '',
+    56: '0x91F4D7243E82D5059E0038ecB259BfE7e405F896',
+    97: '0x91F4D7243E82D5059E0038ecB259BfE7e405F896',
   },
   wbnb: {
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-    97: '',
+    97: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
   },
   lottery: {
     56: '',
@@ -25,6 +25,6 @@ export default {
   },
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-    97: '',
+    97: '0x8301f2213c0eed49a7e28ae4c3e91722919b8b47',
   },
 }

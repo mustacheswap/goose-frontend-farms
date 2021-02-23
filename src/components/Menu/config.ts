@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'http://exchange.goosedefi.com/',
+        href: 'http://exchange.tacoswap.com/',
       },
       {
         label: 'Liquidity',
-        href: 'http://exchange.goosedefi.com/#/pool',
+        href: 'http://exchange.tacoswap.com/#/pool',
       },
     ],
   },
@@ -26,9 +26,9 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Nests',
+    label: 'Vendors',
     icon: 'PoolIcon',
-    href: '/nests',
+    href: '/vendors',
   },
   // {
   //   label: 'Pools',
@@ -55,11 +55,11 @@ const config: MenuEntry[] = [
       },
       {
         label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/goose-finance',
+        href: 'https://www.coingecko.com/en/coins/taco-finance',
       },
       {
         label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/goose-finance/',
+        href: 'https://coinmarketcap.com/currencies/taco-finance/',
       },
       {
         label: 'AstroTools',
@@ -72,25 +72,25 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Audit by Hacken',
+        label: 'Forked from audited Goosedefi',
         href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
       },
       {
-        label: "Github",
-        href: "https://github.com/goosedefi/",
+        label: 'Github',
+        href: 'https://github.com/tacofinance/',
       },
       {
-        label: "Docs",
-        href: "https://goosedefi.gitbook.io/goose-finance/",
+        label: 'Docs',
+        href: 'https://tacoswap.gitbook.io/taco-finance/',
       },
       {
-        label: "Blog",
-        href: "https://goosefinance.medium.com/",
+        label: 'Blog',
+        href: 'https://tacofinance.medium.com/',
       },
     ],
   },
   {
-    label: 'Audit by Hacken',
+    label: 'Forked from audited Goosedefi',
     icon: 'AuditIcon',
     href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
   },

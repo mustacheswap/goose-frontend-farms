@@ -11,7 +11,6 @@ import TwitterCard from './components/TwitterCard'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/egg/3.png');
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -23,7 +22,6 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/egg/3.png'), url('/images/egg/3b.png');
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;
@@ -60,14 +58,20 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'Goose Finance')}
+          <span style={{ fontFamily: 'taco', textTransform: 'uppercase', fontSize: '40pt' }}>
+            {TranslateString(576, 'Taco Swap')}
+          </span>
         </Heading>
-        <Text>{TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}</Text>
+        <Text>
+          <span style={{ color: '#d94590' }}>
+            {TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}
+          </span>
+        </Text>
       </Hero>
       <div>
         <Cards>
           <FarmStakingCard />
-          <TwitterCard/>
+          <TwitterCard />
           <CakeStats />
           <TotalValueLockedCard />
         </Cards>

@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: 'Kanit', sans-serif;
   }
+
+  @font-face {
+    font-family: 'taco';
+    src: url(/fonts/tacos.ttf);
+  }
+
   body {
     background-color: ${({ theme }) => theme.colors.background};
 
