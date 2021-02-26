@@ -26,9 +26,9 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Vendors',
+    label: 'Trucks',
     icon: 'PoolIcon',
-    href: '/vendors',
+    href: '/trucks',
   },
   // {
   //   label: 'Pools',
@@ -51,19 +51,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+        href: 'https://pancakeswap.info/token/0xEF5338ad66Ca3d32c15a2E95F5F6818fDb57dd32',
       },
-      {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/taco-finance',
-      },
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/taco-finance/',
-      },
+      // {
+      //   label: 'CoinGecko',
+      //   href: 'https://www.coingecko.com/en/coins/taco-finance',
+      // },
+      // {
+      //   label: 'CoinMarketCap',
+      //   href: 'https://coinmarketcap.com/currencies/taco-finance/',
+      // },
       {
         label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+        href: 'https://app.astrotools.io/pancake-pair-explorer/0x29B16D0Db50FD81B37a60E171B8b5025717A2533', // taco-busd
       },
     ],
   },

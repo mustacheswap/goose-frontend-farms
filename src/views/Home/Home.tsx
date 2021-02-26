@@ -20,6 +20,8 @@ const Hero = styled.div`
   margin-bottom: 32px;
   padding-top: 116px;
   text-align: center;
+  background: url(/images/taco/taco_banner.png);
+  background-size: cover;
 
   ${({ theme }) => theme.mediaQueries.lg} {
     background-position: left center, right center;

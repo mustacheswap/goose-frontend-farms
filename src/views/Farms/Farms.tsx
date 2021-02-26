@@ -85,16 +85,30 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     [bnbPrice, account, cakePrice, ethereum],
   )
 
+  const style = !tokenMode
+    ? { background: 'url(/images/taco/taco_banner.png)', backgroundSize: 'cover', height: 170 }
+    : {}
+
   return (
     <Page>
-      <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
-        {tokenMode
-          ? TranslateString(10002, 'Stake tokens to earn TACO')
-          : TranslateString(320, 'Stake LP tokens to earn TACO')}
-      </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback TACO')}
-      </Heading>
+      <div style={style}>
+        <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+          {tokenMode
+            ? TranslateString(10002, 'Stake tokens to earn TACO')
+            : TranslateString(320, 'Stake LP tokens to earn TACO')}
+        </Heading>
+        <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+          {TranslateString(10000, 'Deposit Fee will be used to buyback TACO')}
+        </Heading>
+        {tokenMode && (
+          <img
+            src="/images/taco/taco_truck_2.png"
+            alt="Taco Truck"
+            width={200}
+            style={{ position: 'absolute', top: 50, right: 20 }}
+          />
+        )}
+      </div>
       <FarmTabButtons />
       <div>
         <Divider />
@@ -107,7 +121,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/taco/8.png" alt="illustration" width={1352} height={587} responsive />
+      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end' }}>
+        <Image src="/images/taco/8.png" alt="illustration" width={200} height={58} responsive />
+      </div>
     </Page>
   )
 }

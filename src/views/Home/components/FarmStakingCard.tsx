@@ -3,14 +3,19 @@ import styled from 'styled-components'
 import { Heading, Card, CardBody, Button } from '@pancakeswap-libs/uikit'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useI18n from 'hooks/useI18n'
+import BigNumber from 'bignumber.js/bignumber'
 import { useAllHarvest } from 'hooks/useHarvest'
 import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import UnlockButton from 'components/UnlockButton'
 import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
+import useAllEarnings from '../../../hooks/useAllEarnings'
+import { usePriceCakeBusd } from '../../../state/hooks'
+import { getCakeAddress } from '../../../utils/addressHelpers'
+import useTokenBalance from '../../../hooks/useTokenBalance'
+import { getBalanceNumber } from '../../../utils/formatBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/taco/2a.png');
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 376px;
@@ -38,6 +43,12 @@ const FarmedStakingCard = () => {
   const { account } = useWallet()
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
+  const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
+  const eggPrice = usePriceCakeBusd().toNumber()
+  const allEarnings = useAllEarnings()
+  const earningsSum = allEarnings.reduce((accum, earning) => {
+    return accum + new BigNumber(earning).div(new BigNumber(10).pow(18)).toNumber()
+  }, 0)
   const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.toNumber() > 0)
 
   const { onReward } = useAllHarvest(balancesWithValue.map((farmWithBalance) => farmWithBalance.pid))
@@ -59,14 +70,16 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/taco/2.png" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/taco/TACO.png" alt="cake logo" width={64} height={64} />
         <Block>
-          <CakeHarvestBalance />
           <Label>{TranslateString(544, 'TACO to Harvest')}</Label>
+          <CakeHarvestBalance earningsSum={earningsSum} />
+          <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
-          <CakeWalletBalance />
           <Label>{TranslateString(546, 'TACO in Wallet')}</Label>
+          <CakeWalletBalance cakeBalance={cakeBalance} />
+          <Label>~${(eggPrice * cakeBalance).toFixed(2)}</Label>
         </Block>
         <Actions>
           {account ? (
