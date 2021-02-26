@@ -1884,10 +1884,10 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@file:../tacoswap-uikit":
+"@pancakeswap-libs/uikit@tacofinance/tacoswap-uikit":
   version "0.10.2"
+  resolved "https://codeload.github.com/tacofinance/tacoswap-uikit/tar.gz/0089c01a32e1fdbdbe5f217fbcac1c5e21d1f616"
   dependencies:
-    "@rollup/plugin-alias" "^3.1.2"
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
     lodash "^4.17.20"
@@ -1963,13 +1963,6 @@
     redux "^4.0.0"
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
-
-"@rollup/plugin-alias@^3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.2.tgz#c585b05be4a7782d269c69d13def56f44e417772"
-  integrity sha512-wzDnQ6v7CcoRzS0qVwFPrFdYA4Qlr+ookA217Y2Z3DPZE1R8jrFNM3jvGgOf6o6DMjbnQIn5lCIJgHPe1Bt3uw==
-  dependencies:
-    slash "^3.0.0"
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"

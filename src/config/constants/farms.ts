@@ -165,7 +165,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // TACO-BUSD LP (BUSD-BUSD will ignore)
+      56: TACO_BUSD_LP_MAINNET, // TACO-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
@@ -197,7 +197,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'VIKING',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // BNB-BUSD LP
+      56: '0x9b989a7b8963f4b08ec094710e2966fb3c7f6c43', // VIKING-BUSD LP
     },
     tokenSymbol: 'VIKING',
     tokenAddresses: {
@@ -229,7 +229,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'ALPHA',
     lpAddresses: {
       97: '',
-      56: '0xa1faa113cbe53436df28ff0aee54275c13b40975', // DOT-BUSD LP
+      56: '0x5ba0d670ea3db79067ee6861b960f06d53712e18', // ALPHA-BUSD LP
     },
     tokenSymbol: 'ALPHA',
     tokenAddresses: {
@@ -261,7 +261,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LINK',
     lpAddresses: {
       97: '',
-      56: '0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd', // LINK-BUSD LP
+      56: '0xe54a9d8412287cfc675cae18a0011483ef975f05', // LINK-BUSD LP
     },
     tokenSymbol: 'LINK',
     tokenAddresses: {
@@ -293,7 +293,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LINA',
     lpAddresses: {
       97: '',
-      56: '0xeB325a8ea1c5abf40c7ceAf645596c1F943d0948', // LINA-BUSD LP
+      56: '0xeb325a8ea1c5abf40c7ceaf645596c1f943d0948', // LINA-BUSD LP
     },
     tokenSymbol: 'LINA',
     tokenAddresses: {
