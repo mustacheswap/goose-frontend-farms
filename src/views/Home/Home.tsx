@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         </Heading>
         <Text>
           <span style={{ color: '#d94590' }}>
-            {TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}
+            {TranslateString(578, 'Most DELICIOUS exchange in all of Binance Smart Chain!')}
           </span>
         </Text>
       </Hero>

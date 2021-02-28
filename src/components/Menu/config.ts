@@ -86,7 +86,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Blog',
-        href: 'https://medium.com/@taco.finance',
+        href: 'https://taco-finance.medium.com/',
       },
     ],
   },
