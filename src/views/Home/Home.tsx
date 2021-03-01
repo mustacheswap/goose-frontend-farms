@@ -18,12 +18,13 @@ const Hero = styled.div`
   flex-direction: column;
   margin: auto;
   margin-bottom: 32px;
-  padding-top: 116px;
   text-align: center;
-  background: url(/images/taco/taco_banner.png);
-  background-size: cover;
+  padding-top: 48px;
 
   ${({ theme }) => theme.mediaQueries.lg} {
+    padding-top: 116px;
+    background: url(/images/taco/taco_banner.png);
+    background-size: cover;
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;
