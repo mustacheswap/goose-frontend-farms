@@ -54,14 +54,14 @@ const config: MenuEntry[] = [
         label: 'PancakeSwap',
         href: 'https://pancakeswap.info/token/0x9066e87Bac891409D690cfEfA41379b34af06391',
       },
-      // {
-      //   label: 'CoinGecko',
-      //   href: 'https://www.coingecko.com/en/coins/taco-finance',
-      // },
-      // {
-      //   label: 'CoinMarketCap',
-      //   href: 'https://coinmarketcap.com/currencies/taco-finance/',
-      // },
+      {
+        label: 'CoinGecko',
+        href: 'https://www.coingecko.com/en/coins/taco-finance',
+      },
+      {
+        label: 'CoinMarketCap',
+        href: 'https://coinmarketcap.com/currencies/taco-finance/',
+      },
       {
         label: 'AstroTools',
         href: 'https://app.astrotools.io/pancake-pair-explorer/0x3BB3B98c0FABE30166E6B7D62aEef393249871E4', // taco-busd
@@ -72,10 +72,10 @@ const config: MenuEntry[] = [
     label: 'More',
     icon: 'MoreIcon',
     items: [
-      // {
-      //   label: 'Forked from audited Goosedefi',
-      //   href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
-      // },
+      {
+        label: 'Hacken Audit',
+        href: 'https://taco.finance/files/TacoSwap_SC_Audit_Report.pdf',
+      },
       {
         label: 'Github',
         href: 'https://github.com/tacofinance/',
@@ -90,11 +90,11 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  // {
-  //   label: 'Forked from audited Goosedefi',
-  //   icon: 'AuditIcon',
-  //   href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
-  // },
+  {
+    label: 'Hacken Audit',
+    icon: 'AuditIcon',
+    href: 'https://taco.finance/files/TacoSwap_SC_Audit_Report.pdf',
+  },
 ]
 
 export default config
