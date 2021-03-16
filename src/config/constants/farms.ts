@@ -303,6 +303,52 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
+  {
+    risk: 3,
+    lpSymbol: 'TACO-USDT LP',
+    lpAddresses: {
+      97: '',
+      56: '0xc6d0728a0a6acf362cbce0433806d89942fb4403', // LINA-BUSD LP
+    },
+    tokenSymbol: 'TACO',
+    tokenAddresses: {
+      97: '',
+      56: TACO_MAINNET,
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    risk: 3,
+    lpSymbol: 'TACO-USDC LP',
+    lpAddresses: {
+      97: '',
+      56: '0xe888076a3fe450cb3b31db7dac82be38faad3174', // LINA-BUSD LP
+    },
+    tokenSymbol: 'TACO',
+    tokenAddresses: {
+      97: '',
+      56: TACO_MAINNET,
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'AUTO',
+    lpAddresses: {
+      97: '',
+      56: '0xa184088a740c695e156f91f5cc086a06bb78b827', // LINA-BUSD LP
+    },
+    tokenSymbol: 'AUTO',
+    tokenAddresses: {
+      97: '',
+      56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
 ].map((farm, index) => ({ ...farm, pid: index }))
 
 export default farms
