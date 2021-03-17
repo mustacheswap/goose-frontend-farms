@@ -27,4 +27,8 @@ export default {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     97: '0x8301f2213c0eed49a7e28ae4c3e91722919b8b47',
   },
+  usdc: {
+    56: '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d',
+    97: '',
+  },
 }
