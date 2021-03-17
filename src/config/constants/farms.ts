@@ -315,8 +315,8 @@ const farms: FarmConfig[] = [
       97: '',
       56: TACO_MAINNET,
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.USDT,
+    quoteTokenAdresses: contracts.usdt,
   },
   {
     risk: 3,
