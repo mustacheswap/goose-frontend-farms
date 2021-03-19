@@ -339,15 +339,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'AUTO',
     lpAddresses: {
       97: '',
-      56: '0xa184088a740c695e156f91f5cc086a06bb78b827', // LINA-BUSD LP
+      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // LINA-BUSD LP
     },
     tokenSymbol: 'AUTO',
     tokenAddresses: {
       97: '',
       56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 ].map((farm, index) => ({ ...farm, pid: index }))
 
