@@ -10,16 +10,16 @@ interface IFrameProps {
 
 const IFrame: React.FC<IFrameProps> = (props) => {
   const { url, title } = props
-  const iframeRef = useRef(null);
-  const { isDark } = useContext(ThemeContext);
+  const iframeRef = useRef(null)
+  const { isDark } = useContext(ThemeContext)
   const { selectedLanguage } = useContext(LanguageContext)
-  const sendSettings = e =>{
+  const sendSettings = (e) => {
     const payload = {
       isDark,
-      selectedLanguage
+      selectedLanguage,
     }
     iframeRef.current.sendMessage(payload)
-  };
+  }
   return (
       <IframeResizer
         forwardRef={iframeRef}
