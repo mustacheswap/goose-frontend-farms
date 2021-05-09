@@ -19,11 +19,13 @@ const Hero = styled.div`
   flex-direction: column;
   margin: auto;
   margin-bottom: 32px;
-  padding-top: 116px;
   text-align: center;
+  padding-top: 48px;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/egg/3.png'), url('/images/egg/3b.png');
+    padding-top: 116px;
+    background: url(/images/mustache/mustache_banner.png);
+    background-size: cover;
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;
@@ -60,9 +62,13 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'Goose Finance')}
+          <span style={{ fontFamily: 'mustache', textTransform: 'uppercase', fontSize: '40pt' }}>
+            {TranslateString(576, 'Mustacheswap')}
+          </span>
         </Heading>
-        <Text>{TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}</Text>
+        <Text><span style={{ color: '#d94590' }}>
+            {TranslateString(578, 'Most mustachious exchange in all of Binance Smart Chain!')}
+          </span></Text>
       </Hero>
       <div>
         <Cards>
