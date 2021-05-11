@@ -57,19 +57,21 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         // if (!farm.tokenAmount || !farm.lpTotalInQuoteToken || !farm.lpTotalInQuoteToken) {
         //   return farm
         // }
-        const cakeRewardPerBlock = new BigNumber(farm.eggPerBlock || 1).times(new BigNumber(farm.poolWeight)) .div(new BigNumber(10).pow(18))
+        const cakeRewardPerBlock = new BigNumber(farm.mustachePerBlock || 1)
+          .times(new BigNumber(farm.poolWeight)) 
+          .div(new BigNumber(10).pow(18))
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
 
-        let apy = cakePrice.times(cakeRewardPerYear);
+        let apy = cakePrice.times(cakeRewardPerYear)
 
-        let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0);
+        let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0)
 
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {
-          totalValue = totalValue.times(bnbPrice);
+          totalValue = totalValue.times(bnbPrice)
         }
 
         if(totalValue.comparedTo(0) > 0){
-          apy = apy.div(totalValue);
+          apy = apy.div(totalValue)
         }
 
         return { ...farm, apy }
@@ -91,30 +93,39 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
-        {
-          tokenMode ?
-            TranslateString(10002, 'Stake tokens to earn EGG')
-            :
-          TranslateString(320, 'Stake LP tokens to earn EGG')
-        }
-      </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback EGG')}
-      </Heading>
-      <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
+      <div style={style}>
+        <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+          {tokenMode
+            ? TranslateString(10002, 'Stake tokens to earn MUSTACHE')
+            : TranslateString(320, 'Stake LP tokens to earn MUSTACHE')}
+        </Heading>
+        <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+          {TranslateString(10000, 'Deposit Fee will be used to buyback MUSTACHE')}
+        </Heading>
+        {tokenMode && (
+          <img
+            src="/images/mustache/mustache_shop.png"
+            alt="Mustache Shop"
+            width={200}
+            style={{ position: 'absolute', top: 50, right: 20 }}
+          />
+        )}
+      </div>
+      <FarmTabButtons />
       <div>
         <Divider />
         <FlexLayout>
           <Route exact path={`${path}`}>
-            {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
+            {farmsList(activeFarms, false)}
           </Route>
           <Route exact path={`${path}/history`}>
             {farmsList(inactiveFarms, true)}
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive />
+      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end' }}>
+        <Image src="/images/mustache/8.png" alt="illustration" width={200} height={58} responsive />
+      </div>
     </Page>
   )
 }
