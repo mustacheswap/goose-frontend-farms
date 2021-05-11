@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=XXXXXX', //fil in
+        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=XXXXXX', // fil in
       },
       {
         label: 'Liquidity',
