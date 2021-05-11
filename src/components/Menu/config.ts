@@ -12,11 +12,12 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.mustacheswap.com/',
+        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=XXXXXX', //fil in! 
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.mustacheswap.com/#/pool',
+        href:
+          'https://exchange.mustacheswap.com/#/add/XXXX/YYYYY', // fill in 
       },
     ],
   },
@@ -26,9 +27,9 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Barber',
+    label: 'Trucks',
     icon: 'PoolIcon',
-    href: '/barber',
+    href: '/trucks',
   },
   // {
   //   label: 'Pools',
@@ -51,19 +52,19 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+        href: 'https://pancakeswap.info/token/0x9066e87Bac891409D690cfEfA41379b34af06391',
       },
       {
         label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/mustache-finance',
+        href: 'https://www.coingecko.com/en/coins/mustacheswap',
       },
       {
         label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/mustache-finance/',
+        href: 'https://coinmarketcap.com/currencies/mustacheswap/',
       },
       {
         label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/',
+        href: 'https://app.astrotools.io/pancake-pair-explorer/XXX', // mustache-busd
       },
     ],
   },
@@ -71,10 +72,10 @@ const config: MenuEntry[] = [
     label: 'More',
     icon: 'MoreIcon',
     items: [
-      //{
-      // label: 'Hacken Audit',
-      // href: 'https://mustacheswap.com/files/xx.pdf',
-      // },
+      {
+        label: 'Hacken Audit',
+        href: 'https://mustacheswap.com/files/x.pdf',
+      },
       {
         label: 'Github',
         href: 'https://github.com/mustacheswap/',
@@ -90,20 +91,10 @@ const config: MenuEntry[] = [
     ],
   },
   {
-   // label: 'Partnerships/IFO',
-   // icon: 'GooseIcon',
-   // href: 'https://docs.google.com/forms/d/e/1FAIpQLSe7ycrw8Dq4C5Vjc9WNlRtTxEhFDB1Ny6jlAByZ2Y6qBo7SKg/viewform?usp=sf_link',
-  //},
-  // {
-   // label: 'Audit by Hacken',
-   // icon: 'AuditIcon',
-   // href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
-  //},
- // {
-  //  label: 'Audit by CertiK',
-  //  icon: 'AuditIcon',
-  //  href: 'https://certik.org/projects/goose-finance',
-  // },
+    label: 'Hacken Audit',
+    icon: 'AuditIcon',
+    href: 'https://mustacheswap.com/files/XX.pdf',
+  },
 ]
 
 export default config
