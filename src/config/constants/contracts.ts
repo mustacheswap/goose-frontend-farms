@@ -1,15 +1,15 @@
 export default {
   cake: {
-    56: '0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+    56: 'xx', // MUSTACHE TOKEN
     97: '',
   },
   masterChef: {
-    56: '0xe70E9185F5ea7Ba3C5d63705784D8563017f2E57',
-    97: '',
+    56: 'xx',
+    97: '0x91F4D7243E82D5059E0038ecB259BfE7e405F896',
   },
   wbnb: {
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-    97: '',
+    97: '0xae13d989dac2f0debff460ac112a837c89baa7cd',
   },
   lottery: {
     56: '',
@@ -25,6 +25,14 @@ export default {
   },
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+    97: '0x8301f2213c0eed49a7e28ae4c3e91722919b8b47',
+  },
+  usdc: {
+    56: '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d',
+    97: '',
+  },
+  usdt: {
+    56: '0x55d398326f99059ff775485246999027b3197955',
     97: '',
   },
 }
