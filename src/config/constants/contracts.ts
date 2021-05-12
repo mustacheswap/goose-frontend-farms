@@ -1,6 +1,6 @@
 export default {
   cake: {
-    56: 'xx', // MUSTACHE TOKEN
+    56: '0x0000000000000000000000000000000000000000', // MUSTACHE TOKEN
     97: '',
   },
   masterChef: {
