@@ -12,12 +12,12 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=XXXXXX', // fil in
+        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=0x0000000000000000000000000000000000000000', // fil in
       },
       {
         label: 'Liquidity',
         href:
-          'https://exchange.mustacheswap.com/#/add/XXXX/YYYYY', // fill in 
+          'https://exchange.mustacheswap.com/#/add/0x0000000000000000000000000000000000000000/0x0000000000000000000000000000000000000000', // fill in 
       },
     ],
   },
@@ -64,7 +64,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/XXX', // mustache-busd
+        href: 'https://app.astrotools.io/pancake-pair-explorer/0x0000000000000000000000000000000000000000', // mustache-busd
       },
     ],
   },
