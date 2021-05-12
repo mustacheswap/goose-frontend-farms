@@ -1,21 +1,21 @@
 import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
-const MUSTACHE_BUSD_LP_MAINNET = `xx`
-const MUSTACHE_BNB_LP_MAINNET = `xx`
-const MUSTACHE_MAINNET = `xx`
+const MUSTACHE_BUSD_LP_MAINNET = `0x0000000000000000000000000000000000000000`
+const MUSTACHE_BNB_LP_MAINNET = `0x0000000000000000000000000000000000000000`
+const MUSTACHE_MAINNET = `0x0000000000000000000000000000000000000000`
 
 const farms: FarmConfig[] = [
   {
     risk: 5,
     lpSymbol: 'MUSTACHE-BUSD LP',
     lpAddresses: {
-      97: 'xx',
+      97: '0x0000000000000000000000000000000000000000',
       56: MUSTACHE_BUSD_LP_MAINNET,
     },
     tokenSymbol: 'MUSTACHE',
     tokenAddresses: {
-      97: 'xx',
+      97: '0x0000000000000000000000000000000000000000',
       56: MUSTACHE_MAINNET,
     },
     quoteTokenSymbol: QuoteToken.BUSD,
