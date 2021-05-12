@@ -70,7 +70,7 @@ const FarmedStakingCard = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
-        <CardImage src="/images/mustahce/MUSTACHE.png" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/mustache/MUSTACHE.png" alt="cake logo" width={64} height={64} />
         <Block>
           <Label>{TranslateString(544, 'MUSTACHE to Harvest')}</Label>
           <CakeHarvestBalance earningsSum={earningsSum}/>
