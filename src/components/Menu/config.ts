@@ -54,28 +54,28 @@ const config: MenuEntry[] = [
         label: 'PancakeSwap',
         href: 'https://pancakeswap.info/token/0x9066e87Bac891409D690cfEfA41379b34af06391',
       },
-      {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/mustacheswap',
-      },
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/mustacheswap/',
-      },
-      {
-        label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x0000000000000000000000000000000000000000', // mustache-busd
-      },
+      // {
+      //   label: 'CoinGecko',
+      //   href: 'https://www.coingecko.com/en/coins/mustacheswap',
+      // },
+      // {
+      //   label: 'CoinMarketCap',
+      //   href: 'https://coinmarketcap.com/currencies/mustacheswap/',
+      // },
+      // {
+      //   label: 'AstroTools',
+      //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x0000000000000000000000000000000000000000', // mustache-busd
+      // },
     ],
   },
   {
     label: 'More',
     icon: 'MoreIcon',
     items: [
-      {
-        label: 'Hacken Audit',
-        href: 'https://mustacheswap.com/files/x.pdf',
-      },
+      // {
+      //   label: 'Hacken Audit',
+      //   href: 'https://mustacheswap.com/files/x.pdf',
+      // },
       {
         label: 'Github',
         href: 'https://github.com/mustacheswap/',
@@ -90,11 +90,11 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  {
-    label: 'Hacken Audit',
-    icon: 'AuditIcon',
-    href: 'https://mustacheswap.com/files/XX.pdf',
-  },
+  // {
+  //   label: 'Hacken Audit',
+  //   icon: 'AuditIcon',
+  //   href: 'https://mustacheswap.com/files/XX.pdf',
+  // },
 ]
 
 export default config
