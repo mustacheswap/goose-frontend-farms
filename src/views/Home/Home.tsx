@@ -12,6 +12,7 @@ import TwitterCard from './components/TwitterCard'
 const Hero = styled.div`
   align-items: center;
   background-repeat: no-repeat;
+  background-image: url('/images/mustache/3.png');
   background-position: top center;
   display: flex;
   justify-content: center;
@@ -22,9 +23,7 @@ const Hero = styled.div`
   padding-top: 48px;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    padding-top: 116px;
-    background: url(/images/mustache/mustache_banner.png);
-    background-size: cover;
+    background-image: url('/images/mustache/3.png'), url('/images/mustache/3b.png');
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;
@@ -61,12 +60,12 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          <span style={{ fontFamily: 'mustache', textTransform: 'uppercase', fontSize: '40pt' }}>
+          <span style={{ fontFamily: 'tahoma', textTransform: 'uppercase', fontSize: '40pt' }}>
             {TranslateString(576, 'Mustacheswap')}
           </span>
         </Heading>
-        <Text><span style={{ color: '#d94590' }}>
-            {TranslateString(578, 'Most mustachious exchange in all of Binance Smart Chain!')}
+        <Text><span style={{ color: '#000000', fontWeight: 'bold' }}>
+            {TranslateString(578, 'The gentlemens Yield Farming & DEX on Binance Smart Chain')}
           </span></Text>
       </Hero>
       <div>
