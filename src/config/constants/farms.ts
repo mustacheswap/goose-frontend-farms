@@ -7,6 +7,7 @@ const MUSTACHE_MAINNET = `0x0000000000000000000000000000000000000000`
 
 const farms: FarmConfig[] = [
   {
+    pid: 0,
     risk: 5,
     lpSymbol: 'MUSTACHE-BUSD LP',
     lpAddresses: {
@@ -22,6 +23,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 1,
     risk: 5,
     lpSymbol: 'MUSTACHE-BNB LP',
     lpAddresses: {
@@ -37,6 +39,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
+    pid: 2,
     risk: 3,
     lpSymbol: 'BNB-BUSD LP',
     lpAddresses: {
@@ -52,6 +55,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 3,
     risk: 1,
     lpSymbol: 'USDT-BUSD LP',
     lpAddresses: {
@@ -67,6 +71,23 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 4,
+    risk: 1,
+    lpSymbol: 'DAI-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x3ab77e40340ab084c3e23be8e5a6f7afed9d41dc',
+    },
+    tokenSymbol: 'DAI',
+    tokenAddresses: {
+      97: '',
+      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 5,
     risk: 2,
     lpSymbol: 'ETH-BNB LP',
     lpAddresses: {
@@ -82,6 +103,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
+    pid: 6,
     risk: 1,
     lpSymbol: 'USDC-BUSD LP',
     lpAddresses: {
@@ -97,6 +119,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 7,
     risk: 3,
     lpSymbol: 'DOT-BNB LP',
     lpAddresses: {
@@ -112,6 +135,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
+    pid: 8,
     risk: 4,
     lpSymbol: 'CAKE-BUSD LP',
     lpAddresses: {
@@ -127,6 +151,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 9,
     risk: 4,
     lpSymbol: 'CAKE-BNB LP',
     lpAddresses: {
@@ -144,6 +169,7 @@ const farms: FarmConfig[] = [
   // TODO: CHECK POOLS https://github.com/VikingDefi/viking-frontend-farms/blob/master/src/config/constants/farms.ts
   // pools
   {
+    pid: 10,
     risk: 5,
     isTokenOnly: true,
     lpSymbol: 'MUSTACHE',
@@ -160,6 +186,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 11,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'BUSD',
@@ -176,6 +203,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 12,
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'EGG',
@@ -208,6 +236,7 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   {
+    pid: 13,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'DOT',
@@ -256,6 +285,7 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   {
+    pid: 14,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'LINK',
@@ -272,6 +302,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
+    pid: 15,
     risk: 4,
     isTokenOnly: true,
     lpSymbol: 'CAKE',
@@ -304,6 +335,7 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   {
+    pid: 16,
     risk: 3,
     lpSymbol: 'MUSTACHE-USDT LP',
     lpAddresses: {
@@ -319,6 +351,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.usdt,
   },
   {
+    pid: 17,
     risk: 3,
     lpSymbol: 'MUSTACHE-USDC LP',
     lpAddresses: {
