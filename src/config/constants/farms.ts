@@ -191,22 +191,22 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  {
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'VIKING',
-    lpAddresses: {
-      97: '',
-      56: '0x9b989a7b8963f4b08ec094710e2966fb3c7f6c43', // VIKING-BUSD LP
-    },
-    tokenSymbol: 'VIKING',
-    tokenAddresses: {
-      97: '',
-      56: '0x896ede222d3f7f3414e136a2791bdb08aaa25ce0',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
+  // {
+  //   risk: 3,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'VIKING',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x9b989a7b8963f4b08ec094710e2966fb3c7f6c43', // VIKING-BUSD LP
+  //   },
+  //   tokenSymbol: 'VIKING',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x896ede222d3f7f3414e136a2791bdb08aaa25ce0',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BUSD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
   {
     risk: 3,
     isTokenOnly: true,
@@ -223,38 +223,38 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  {
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'ALPHA',
-    lpAddresses: {
-      97: '',
-      56: '0x5ba0d670ea3db79067ee6861b960f06d53712e18', // ALPHA-BUSD LP
-    },
-    tokenSymbol: 'ALPHA',
-    tokenAddresses: {
-      97: '',
-      56: '0xa1faa113cbe53436df28ff0aee54275c13b40975',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  {
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'STAX',
-    lpAddresses: {
-      97: '',
-      56: '0x13abfa7b781bee80ca7fae7ec71045488d876a8d', // STAX-BUSD LP
-    },
-    tokenSymbol: 'STAX',
-    tokenAddresses: {
-      97: '',
-      56: '0x0da6ed8b13214ff28e9ca979dd37439e8a88f6c4',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
+  // {
+  //   risk: 3,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'ALPHA',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x5ba0d670ea3db79067ee6861b960f06d53712e18', // ALPHA-BUSD LP
+  //   },
+  //   tokenSymbol: 'ALPHA',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0xa1faa113cbe53436df28ff0aee54275c13b40975',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BUSD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
+  // {
+  //   risk: 3,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'STAX',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x13abfa7b781bee80ca7fae7ec71045488d876a8d', // STAX-BUSD LP
+  //   },
+  //   tokenSymbol: 'STAX',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x0da6ed8b13214ff28e9ca979dd37439e8a88f6c4',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BUSD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
   {
     risk: 3,
     isTokenOnly: true,
@@ -287,22 +287,22 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  {
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'LINA',
-    lpAddresses: {
-      97: '',
-      56: '0xeb325a8ea1c5abf40c7ceaf645596c1f943d0948', // LINA-BUSD LP
-    },
-    tokenSymbol: 'LINA',
-    tokenAddresses: {
-      97: '',
-      56: '0x762539b45a1dcce3d36d080f74d1aed37844b878',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
+  // {
+  //   risk: 3,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'LINA',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xeb325a8ea1c5abf40c7ceaf645596c1f943d0948', // LINA-BUSD LP
+  //   },
+  //   tokenSymbol: 'LINA',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x762539b45a1dcce3d36d080f74d1aed37844b878',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BUSD,
+  //   quoteTokenAdresses: contracts.busd,
+  // },
   {
     risk: 3,
     lpSymbol: 'MUSTACHE-USDT LP',
@@ -333,22 +333,22 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.USDC,
     quoteTokenAdresses: contracts.usdc,
   },
-  {
-    risk: 3,
-    isTokenOnly: true,
-    lpSymbol: 'AUTO',
-    lpAddresses: {
-      97: '',
-      56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // LINA-BUSD LP
-    },
-    tokenSymbol: 'AUTO',
-    tokenAddresses: {
-      97: '',
-      56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
-  },
+  // {
+  //   risk: 3,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'AUTO',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x4d0228ebeb39f6d2f29ba528e2d15fc9121ead56', // LINA-BUSD LP
+  //   },
+  //   tokenSymbol: 'AUTO',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BNB,
+  //   quoteTokenAdresses: contracts.wbnb,
+  // },
 ].map((farm, index) => ({ ...farm, pid: index }))
 
 export default farms
