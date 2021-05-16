@@ -219,24 +219,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 13, 
-    risk: 1,
-    isTokenOnly: true,
-    lpSymbol: 'BUSD',
-    lpAddresses: {
-      97: '',
-      56: MUSTACHE_BUSD_LP_MAINNET, // MUSTACHE-BUSD LP (BUSD-BUSD will ignore)
-    },
-    tokenSymbol: 'BUSD',
-    tokenAddresses: {
-      97: '',
-      56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  {
-    pid: 14,
+    pid: 13,
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'WBNB',
@@ -253,7 +236,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 15, 
+    pid: 14, 
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'EGG',
@@ -270,7 +253,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 16, 
+    pid: 15, 
     risk: 3,
     isTokenOnly: true,
     lpSymbol: 'DOT',
@@ -287,7 +270,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 17, 
+    pid: 16, 
     risk: 4,
     isTokenOnly: true,
     lpSymbol: 'CAKE',
@@ -304,7 +287,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 18, 
+    pid: 17, 
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'USDT',
@@ -321,7 +304,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 19, 
+    pid: 18, 
     risk: 1,
     isTokenOnly: true,
     lpSymbol: 'DAI',
