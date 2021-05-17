@@ -83,7 +83,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Blog',
-        href: 'https://mustacheswap.medium.com/',
+        href: 'https://medium.com/@mustacheswap',
       },
     ],
   },
