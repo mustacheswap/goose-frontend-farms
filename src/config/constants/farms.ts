@@ -1,9 +1,9 @@
 import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
-const MUSTACHE_BUSD_LP_MAINNET = `0x0000000000000000000000000000000000000000`
-const MUSTACHE_BNB_LP_MAINNET = `0x0000000000000000000000000000000000000000`
-const MUSTACHE_MAINNET = `0x0000000000000000000000000000000000000000`
+const MUSTACHE_BUSD_LP_MAINNET = `0x37bc049e55aff4bed7079983f0a172a4d9e3a83f`
+const MUSTACHE_BNB_LP_MAINNET = `0x8f281e81d08d05327d4bea789b81c039379745c5`
+const MUSTACHE_MAINNET = `0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9`
 
 const farms: FarmConfig[] = [
   {
@@ -60,7 +60,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'MUSTACHE-USDT LP',
     lpAddresses: {
       97: '',
-      56: '0xc6d0728a0a6acf362cbce0433806d89942fb4403', // LINA-BUSD LP
+      56: '0x7b757e1732a5005b626092de7e6d1097569f7d9c', // LINA-BUSD LP
     },
     tokenSymbol: 'MUSTACHE',
     tokenAddresses: {
@@ -76,7 +76,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'MUSTACHE-USDC LP',
     lpAddresses: {
       97: '',
-      56: '0xe888076a3fe450cb3b31db7dac82be38faad3174', // LINA-BUSD LP
+      56: '0x74e10c25fc0a1848fed1ad399a3bd0154cc307e8', // LINA-BUSD LP
     },
     tokenSymbol: 'MUSTACHE',
     tokenAddresses: {
