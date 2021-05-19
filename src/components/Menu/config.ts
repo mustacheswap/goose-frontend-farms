@@ -12,12 +12,12 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=0x0000000000000000000000000000000000000000', // fil in
+        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9', // fil in
       },
       {
         label: 'Liquidity',
         href:
-          'https://exchange.mustacheswap.com/#/add/0x0000000000000000000000000000000000000000/0x0000000000000000000000000000000000000000', // fill in 
+          'https://exchange.mustacheswap.com/#/add/0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9/0xe9e7cea3dedca5984780bafc599bd69add087d56', // fill in 
       },
     ],
   },
@@ -49,7 +49,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x0000000000000000000000000000000000000000',
+        href: 'https://pancakeswap.info/token/0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9',
       },
       // {
       //   label: 'CoinGecko',
