@@ -320,7 +320,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-    {
+  {
     pid: 19, // old pid 2
     risk: 3,
     lpSymbol: 'BNB-BUSD LP',
@@ -336,7 +336,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-    {
+  {
     pid: 20, // old pid 5
     risk: 1,
     lpSymbol: 'USDT-BUSD LP',
@@ -352,7 +352,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-    {
+  {
     pid: 21, // old pid 6
     risk: 2,
     lpSymbol: 'ETH-BNB LP',
@@ -368,7 +368,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-    {
+  {
     pid: 22, // old pid 7
     risk: 1,
     lpSymbol: 'USDC-BUSD LP',
