@@ -42,7 +42,6 @@ const config: MenuEntry[] = [
     label: 'CryptoGents NFT (Soon)',
     icon: 'NftIcon',
     href: '/nft',
-    disabled: true, 
   },
   {
     label: 'Listings',
