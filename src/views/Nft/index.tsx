@@ -22,15 +22,16 @@ const Nft = () => {
       <Page>
         <StyledHero>
           <Heading as="h1" size="xxl" color="secondary" mb="24px">
-            NFTs
+            Non Fungible Gentlemen
           </Heading>
           <Heading as="h2" size="lg" color="secondary">
-            {TranslateString(999, 'Trade in for CAKE, or keep for your collection!')}
+            {TranslateString(999, 'Soon to be launched on https://treasureland.market!')}
+          </Heading>
+          <Heading as="h2" size="lg" color="secondary">
+            {TranslateString(999, 'To not miss the launch announcements join our Telegram group.')}
           </Heading>
         </StyledHero>
-        <NftInfo />
         <NftList />
-        <HowItWorks />
       </Page>
     </NftProvider>
   )
