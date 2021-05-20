@@ -45,8 +45,18 @@ const config: MenuEntry[] = [
     disabled: true, 
   },
   {
+    label: 'Listings',
+    icon: 'RoadmapIcon',
+    items: [
+	  {
+        label: 'DappRadar',
+        href: 'https://dappradar.com/binance-smart-chain/defi/mustacheswap',
+      },
+    ],
+  },
+  {
     label: 'Info',
-    icon: 'InfoIcon',
+    icon: 'SunIcon',
     items: [
       {
         label: 'PancakeSwap',
@@ -65,6 +75,26 @@ const config: MenuEntry[] = [
       //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x0000000000000000000000000000000000000000', // mustache-busd
       // },
     ],
+  },
+  {
+    label: 'Price Charts',
+    icon: 'InfoIcon',
+    items: [
+      {
+        label: 'PooCoin',
+        href: 'https://poocoin.app/tokens/0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9',
+      },
+      {
+        label: 'BoggedFinance',
+        href: 'https://charts.bogged.finance/?token=0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9',
+      },
+    ],
+  },
+  {
+    label: 'Audit (Soon)',
+    icon: 'AuditIcon',
+    href: '',
+    disabled: true, 
   },
   {
     label: 'More',
